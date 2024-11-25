@@ -1,0 +1,197 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: #e8efff;
+  overflow: hidden;
+}
+.left-section{
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+}
+.logo>h1{
+  font-size: 90px;
+  color: #2566f3;
+  font-weight: bolder;
+  margin-bottom: 12px;
+  font-family: klavika;
+}
+.logo, .connect{
+  font-size: 26px;
+  width: 450px;
+  font-weight: 400;
+}
+.right-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.details{
+  background-color: white;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 16px;
+}
+.forget{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.forget hr{
+  width: 100%;
+  margin-top: 25px;
+}
+.forget .forget-password{
+  font-size: 400;
+  font-size: 18px;
+}
+.forget .forget-password a{
+  text-decoration: none;
+  color: #2964e4;
+}
+
+.forget .forget-password a:active{
+  color: red;
+}
+.email, .pswd, .login, .create1{
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 8px;
+}
+.email, .pswd{
+  border: 1px solid rgb(179, 179, 179);
+}
+.pswd::placeholder{
+  font-size: 20px;
+}
+
+.login{
+  background-color: rgba(0, 47, 255, 0.89);
+  font-size: 20px;
+  color: white;  
+  border: none;
+  cursor: pointer;
+}
+.create{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.create-new{
+  width: 85%;
+  font-size: 25px;
+  margin: 20px;
+  background-color: rgb(5, 170, 5);
+  color: white;
+  border: none;
+  padding: auto 18px;
+}
+.create-new a{
+  text-decoration: none;
+  color: white;
+}
+.lastpage{
+  margin-top: 28px;
+  font-size: 18px;
+}
+@media screen and (max-width: 576px) {
+  body, html{
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden; 
+      font-family: klavika;
+  }
+  .left-section{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      justify-content: center;
+      align-items: center;
+  }
+  .logo{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 14px;
+  }
+  .logo>h1{
+      font-size: 70px
+  }
+  .connect{
+      width: 350px;
+      font-size: 18px;
+      line-height: 25px;
+      margin-left: 10px;
+  }
+}
+@media screen and (max-width: 776px) and (min-width: 577px){
+  body, html{
+      padding: 0;
+      margin: 0;
+      font-family: klavika;
+  }
+  .left-section{
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+      justify-content: center;
+      align-items: center;
+      width: 10%;
+      margin-top: -10px;
+      padding: 20px;
+  }
+  .details{
+      padding: 10px;
+      
+  }
+  .logo{
+   margin-top: -88px;
+  }
+  .logo>h1{
+      font-size: 50px
+  }
+  .connect{
+      width: 300px;
+      font-size: 15px;
+      line-height: 25px;
+      margin-left: 10px;
+  }
+  .login{
+      font-size: 15px;
+  }
+  .forget .forget-password{
+      font-size: 16px;
+  }
+  .email, .pswd::placeholder{
+      font-size: 15px;
+  }
+  .create-new{
+      font-size: 15px;
+      padding: auto 10px;
+  }
+
+
+  .lastpage{
+      display: none;
+  }
+}
